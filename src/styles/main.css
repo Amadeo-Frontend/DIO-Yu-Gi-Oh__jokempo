@@ -1,72 +1,125 @@
 .bg-video {
-  position: absolute;
-  z-index: -2;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.bg-video .video {
-  height: 100vh;
-}
-
-.bg-video::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.8) 80%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
-
-.container {
-  position: relative;
-  z-index: 20;
-  display: flex;
-  height: 100vh;
-}
-
-.container_left {
-  width: 35%;
-  min-width: 300px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.score_box {
-  background-color: #fff;
-  padding: 1.5rem;
-}
-
-.frame {
-  border: 4px solid #000;
-  border-radius: 5px;
-}
-
-.card_details {
-  background-color: #fff;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 6rem;
-  width: 100%;
-}
-
-#card_name {
-  font-size: 0.8rem;
-}
-
-#card_type {
-  font-size: 1rem;
-}
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bg-video .video {
+    height: 100vh;
+  }
+  
+  .bg-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 80%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  
+  .container {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container__left { /* Atualizado para duplo sublinhado */
+    width: 35%;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .container__right { /* Adicionado */
+    width: 65%;
+    /* Adicione os estilos necessários */
+  }
+  
+  .score_box {
+    background-color: #fff;
+    padding: 1.5rem;
+  }
+  
+  .frame {
+    border: 4px solid #000;
+    border-radius: 5px;
+  }
+  
+  .card_details {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+  }
+  
+  #card_name {
+    font-size: 0.8rem;
+  }
+  
+  #card_type {
+    font-size: 1rem;
+  }
+  
+  .card_box-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem;
+  }
+  
+  .card_versus_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.1rem;
+    height: 300px;
+    margin-top: 0.8rem;
+  }
+  
+  .versus-top,
+  .versus-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .versus-bottom {
+    margin-top: 1rem;
+  }
+  
+  #next-duel {
+    display: none;
+  }
+  
+  .card_box {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .card-infield {
+    height: 11.2rem;
+    width: 8rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  
