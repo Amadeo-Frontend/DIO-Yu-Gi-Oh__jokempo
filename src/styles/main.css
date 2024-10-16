@@ -1,12 +1,3 @@
-/* Reset CSS já importado */
-
-/* Box Sizing Global */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Variáveis CSS para facilitar futuras alterações */
 :root {
   --primary-color: #4CAF50;
@@ -151,6 +142,11 @@
   margin-top: 1rem;
 }
 
+#versus-img{
+  height: 100px;
+  margin: 40px;
+}
+
 /* Botão Next Duel */
 #next-duel {
   display: none; /* Inicialmente escondido */
@@ -216,7 +212,7 @@ img {
 
   /* Ajustar o container das cartas */
   .card_box-container {
-    height: calc(100vh -  /* altura dos outros elementos */);
+    height: calc(100vh -  10px);
     /* Substitua com a altura dos elementos fixos se necessário */
     overflow: auto; /* Permitir scroll interno se necessário */
   }
